@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--<meta name="color-scheme" content="light dark">
-   <meta name="supported-color-schemes" content="light dark">-->
+   <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark">
 	<title>HTML Email Template Boilerplate</title>
    <style type="text/css">
    	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
@@ -20,6 +20,10 @@
       }
       img {
          border: 0;
+      }
+      a {
+         color: #e8fbfa;
+         text-decoration: none;
       }
 
 		@media screen and (max-width: 599.98px) {
@@ -60,6 +64,9 @@
          .two-third-columns img {
             padding-left: 20px;
          }
+         .column-one {
+            background-color: #1e5d7b;
+         }
       }
       @media screen and (max-width: 399.98px) {
          .banner {
@@ -73,9 +80,18 @@
       }
 
       /* Custom Dark Mode Colors */
-
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
       @media (prefers-color-scheme: dark) {
-
+         body, center, table {
+            background: #2d2d2d!important;
+            color: #ffffff!important;
+         }
+         .darkmode-transparent {
+            background-color: transparent!important;
+         }
       }
 	</style>
 
@@ -121,13 +137,13 @@
 <!-- START SOCIAL ICONS -->
             <tr>
                <td style="padding: 0;">
-                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                  <table width="100%" style="border-spacing: 0;background-color: #ebf5fa;" role="presentation">
 
                      <tr>
                         <td height="3px" style="background-color: #21c6b8;"></td>
                      </tr>
                      <tr>
-                        <td style="background-color: #ebf5fa; text-align: center; padding: 10px 0 8px 0;">
+                        <td style="text-align: center; padding: 10px 0 8px 0;">
                         
 
                            <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/bPLzh61/circle-facebook.png" alt="Facebook" title="Facebook" width="32px" border="0"></a>
@@ -151,10 +167,10 @@
 <!-- START LOGO -->
             <tr>
                <td style="padding: 0;">
-                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                  <table width="100%" style="border-spacing: 0;background-color: #fafdfe; " role="presentation">
 
                      <tr>
-                        <td style="background-color: #fafdfe; padding: 20px 0 20px 0; text-align: center;">
+                        <td style="padding: 20px 0 20px 0; text-align: center;">
                            <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/rx31TX7/html-email.png" alt="" width="280" border="0"></a>
                         </td>
                      </tr>
@@ -327,7 +343,7 @@
 
 <!-- START TWO THIRDS COLUMNS -->
             <tr>
-               <td style="padding:10px 0 10px 0;">
+               <td style="padding: 10px 0 10px 0;">
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
                         <td class="two-third-columns" style="padding: 0; font-size: 0; text-align: center; background-color: #1e5d7b;">
@@ -338,11 +354,11 @@
                               <td width="200" valign="top" style="padding:0;">
                            <![endif]-->
 
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 200px; display: inline-block;" role="presentation">
+                           <table class="column column-one" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 200px; display: inline-block; background-color: #1e5d7b;" role="presentation">
                               <tr>
                                  <td class="padding first" style="padding: 15px 20px 15px 20px; background-color: #1e5d7b;">
 
-                                    <table class="content" style="border-spacing: 0; text-align: center;" role="presentation">
+                                    <table class="content darkmode-transparent" style="border-spacing: 0; text-align: center;" role="presentation">
                                        <tr>
                                           <td>
                                              <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/j852yw3/teal-circle.png" alt="" width="160" style="max-width: 160px;" border="0"></a>
