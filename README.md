@@ -1,1 +1,1 @@
-# Email-Template-2
+# Responsive-HTML-Email
